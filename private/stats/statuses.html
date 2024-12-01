@@ -3,7 +3,7 @@
     <head>
         @@include('../../source/templates/head.html', {
             "prefix": "../dist",
-            "siteTitle": "Lux | Site Tracker"
+            "siteTitle": "RP Site Tracker"
         })
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>let statusChart = {};</script>
@@ -14,13 +14,11 @@
         })
         <main>
             <section class="charts">
-                <div class="charts--triple">
+                <div class="charts--double">
                     @@include('../../source/templates/status.html', {
-                        "sitename": "site name from sheet",
-                        "siteID": "siteidfromsheet"
+                        "sitename": "above us",
+                        "siteID": "au"
                     })
-                </div>
-                <div class="charts--single" style="max-width: 500px;">
                     @@include('../../source/templates/status.html', {
                         "sitename": "all",
                         "siteID": "all"
